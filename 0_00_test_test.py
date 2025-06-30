@@ -1,4 +1,15 @@
-for row in range(8):
-    for col in range(6):
-        print('*', end='')
-    print()
+def main():
+    x = 1
+    y = 3.4
+    print (x, y)
+    change_us(x, y)
+    print (x, y)
+
+
+def change_us(a, b):
+    a = 0
+    b = 0
+    print(a, b)
+
+
+main() 
