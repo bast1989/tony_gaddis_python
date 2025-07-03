@@ -1,15 +1,3 @@
-def main():
-    x = 1
-    y = 3.4
-    print (x, y)
-    change_us(x, y)
-    print (x, y)
+p = input(': ')
 
-
-def change_us(a, b):
-    a = 0
-    b = 0
-    print(a, b)
-
-
-main() 
+print(p.isalnum())
