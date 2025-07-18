@@ -1,0 +1,28 @@
+# Эта программа показывает итоговый объем
+# продаж из файла sales data.txt.
+
+def main():
+    # Инициализировать накопитель.
+    total = 0
+    try:
+        # Открыть файл sales_data.txt.
+        infile = open('sales_data.txt', 'r')
+
+        # Прочитать значения из файла
+        # и накопить их в переменной.
+        for line in infile:
+            total += float(line)
+
+        # Закрыть файл.
+        infile.close()
+
+    except Exception as err:
+        print(f'Произошла ошибка: {err}')
+
+    else:
+        # Напечатать итог.
+        print(f'{total:,.2f}')
+
+
+if __name__ == '__main__':
+    main()
